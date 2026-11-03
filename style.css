@@ -64,6 +64,12 @@ nav {
     color: #ffffff;
 }
 
+nav img {
+    border: 2px dotted black;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .last a {
     background-color: #ffffff;
     padding: 5px 8px;
@@ -212,6 +218,12 @@ input , textarea {
     font-size: 10px;     
 }
 
+.footer img {
+    border-radius: 50%;
+    border: 2px dotted black;
+    object-fit: cover;
+}
+
 .handles a{
     color: #ffffff;
     text-decoration: none;
@@ -221,9 +233,45 @@ input , textarea {
 
 
 
+
+/* Media Query for Tablets */
+@media (max-width: 992px) {
+    /* Prevent side-overflow */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    #home {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero-box {
+        position: absolute;
+        z-index: 1;
+        max-width: 100%;
+        right: 0;
+        top: 0;
+        opacity: 0.85;
+    }
+
+    .hero-img, .hero-text {
+        position: relative;
+        z-index: 2;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+}
+
+
+
 @media (max-width: 768px) {
     body {
         overflow-x: hidden;
+        margin-left: 0;
     }
 
     header {
@@ -233,19 +281,24 @@ input , textarea {
         z-index: 10;
     }
 
-    .bars {
-        display: block;
-        font-size: 3px;
-    }
-
     nav {
         flex-direction: row;
-        gap: 15px;
+        gap: 10px;
         text-align: center;
     }
 
     .nav-links {
-        display: none;
+        font-size: 13px;
+    }
+
+    .last {
+        display: block !important;
+        font-size: 5px;
+        white-space: nowrap;
+    }
+
+    .last a {
+        display: inline-block !important;
     }
 
     #home {
@@ -335,8 +388,8 @@ input , textarea {
     .footer {
         flex-direction: row;
         gap: 20px;
-        text-align: center;
         max-width: 90%;
+        font-size: 10px;
     }
 
     .create {
