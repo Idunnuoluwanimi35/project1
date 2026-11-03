@@ -42,6 +42,10 @@ i {
     font-size: 50px;
 }
 
+.bars {
+    display: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -82,7 +86,17 @@ nav {
     display: block;
 }
 
+.hero-text a {
+    background-color: #fa9e1b;
+    padding: 5px 8px;
+    text-decoration: none;
+    color: black;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
 .hero-img img {
+    background-color: #fa9e1b;
     border: 2px dotted black;
     border-radius: 50%;
     position: relative;
@@ -219,6 +233,11 @@ input , textarea {
         z-index: 10;
     }
 
+    .bars {
+        display: block;
+        font-size: 3px;
+    }
+
     nav {
         flex-direction: row;
         gap: 15px;
@@ -226,9 +245,7 @@ input , textarea {
     }
 
     .nav-links {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: none;
     }
 
     #home {
@@ -290,6 +307,16 @@ input , textarea {
         width: 280px !important;
         margin: 0 auto;
     }
+
+    .website img, 
+    .delivery img, 
+    .port img {
+    width: 100% !important;
+    height: 180px !important;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
 
     #contact > form {
         width: 100%;
