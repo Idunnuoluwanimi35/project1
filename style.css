@@ -145,6 +145,11 @@ nav img {
     padding: 10px;
 }
 
+.delivery img {
+    object-fit: cover;
+    
+}
+
 .html,
 .script,
 .data,
