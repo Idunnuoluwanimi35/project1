@@ -157,7 +157,7 @@ nav img {
     padding: 10px;
 }
 
-.website a, .port a {
+.website a, .port a, .delivery a {
     background-color: #fa9e1b;
     padding: 5px 8px;
     text-decoration: none;
@@ -234,9 +234,14 @@ input , textarea {
 
 
 
-/* Media Query for Tablets */
+
+@media (max-width: 1200px) {
+    .project-box img {
+        overflow: hidden;
+    }
+}
+
 @media (max-width: 992px) {
-    /* Prevent side-overflow */
     html, body {
         overflow-x: hidden;
         width: 100%;
@@ -245,6 +250,14 @@ input , textarea {
     #home {
         position: relative;
         overflow: hidden;
+    }
+
+    
+    .hero-img img {
+        width: 240px !important;
+        height: 240px !important;
+        border-radius: 50%;
+        object-fit: cover;
     }
 
     .hero-box {
@@ -264,6 +277,14 @@ input , textarea {
     .nav-links {
         gap: 10px;
     }
+    
+    .project-box img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
 }
 
 
@@ -320,6 +341,7 @@ input , textarea {
     .hero-img {
         margin: 0 auto;
         position: relative;
+        right: 0;
         z-index: 2;
     }
 
@@ -350,8 +372,10 @@ input , textarea {
     }
 
     .project-box img {
-        width: 100%;
-        height: auto;
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover;
+        overflow: hidden;
     }
 
     .website, .delivery, .port, 
