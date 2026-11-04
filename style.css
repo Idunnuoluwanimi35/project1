@@ -261,12 +261,13 @@ input , textarea {
     }
 
     .hero-box {
-        position: absolute;
+        display: none;
+        /* position: absolute;
         z-index: 1;
         max-width: 100%;
         right: 0;
         top: 0;
-        opacity: 0.85;
+        opacity: 0.85; */
     }
 
     .hero-img, .hero-text {
