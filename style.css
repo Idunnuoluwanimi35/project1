@@ -235,11 +235,6 @@ input , textarea {
 
 
 
-@media (max-width: 1200px) {
-    .project-box img {
-        overflow: hidden;
-    }
-}
 
 @media (max-width: 992px) {
     html, body {
